@@ -1,11 +1,13 @@
 import re
 
-text = "Sample text, 199.99"
+text = "Lorem ipsum odor amet, consectetuer adipiscing elit. 0, 1,sd"
 pattern = r"\d"
 
-match = re.search(pattern, text)
+match = re.search(pattern, text) # returns true or false
 
-findall = re.findall(pattern,text)
+findall = re.findall(pattern,text) # returns all instances as an array
+
+subn = re.subn(r'\b\w{4}\b', '****', text) # returns substituted string and number of replaced parts
 
 if match:
     print("match found")
@@ -13,3 +15,4 @@ else:
     print("no match found")
 
 print(findall)
+print(subn)
