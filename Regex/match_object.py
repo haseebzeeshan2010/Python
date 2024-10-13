@@ -29,6 +29,7 @@ if match:
     print(f"Phone number: {match.group(2)}")
     print(f"Start position: {match.start()}")
     print(f"End position: {match.end()}")
+    print(f"Span positions: {match.span()}")
 else:
     print("no match found")
 
