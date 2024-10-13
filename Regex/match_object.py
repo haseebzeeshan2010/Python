@@ -24,7 +24,7 @@ text = "My phone number is 575-454-2323"
 match = re.search(pattern, text) # returns true or false
 
 if match:
-    print("match found")
+    print(f"Matched phone number: {match.group()}")
 else:
     print("no match found")
 
