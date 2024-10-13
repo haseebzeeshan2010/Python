@@ -18,7 +18,7 @@ import re
 
 
 pattern = r"(\d{3})-(\d{3}-\d{4})" # Matches phone number in format XXX-XXX-XXXX
-text = "Lorem ipsum odor amet, consectetuer adipiscing elit. 0, 1,sd"
+text = "My phone number is 575-454-2323"
 
 
 match = re.search(pattern, text) # returns true or false
