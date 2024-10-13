@@ -25,6 +25,8 @@ match = re.search(pattern, text) # returns true or false
 
 if match:
     print(f"Matched phone number: {match.group()}")
+    print(f"Area code: {match.group(1)}")
+    print(f"Phone number: {match.group(2)}")
 else:
     print("no match found")
 
