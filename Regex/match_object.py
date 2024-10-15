@@ -22,7 +22,7 @@ text = "My phone number is 575-454-2323"
 
 
 match = re.search(pattern, text) # returns true or false
-# match = re.search(pattern, text, re.IGNORECASE) # Ignores the case of the patterns
+# match = re.search(pattern, text, re.IGNORECASE) # Ignores the case of the patterns due to re.IGNORECASE flag
 if match:
     print(f"Matched phone number: {match.group()}")
     print(f"Area code: {match.group(1)}")
@@ -32,4 +32,3 @@ if match:
     print(f"Span positions: {match.span()}")
 else:
     print("no match found")
-
