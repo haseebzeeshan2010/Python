@@ -1,0 +1,4 @@
+This a simple sample text.
+It has a few lines to test the program
+The word sample is included again
+This is a line without the target word
