@@ -2,7 +2,7 @@ import re
 import time
 import random
 
-
+#Generate the data
 def get_live_logging_data():
     log_levels = ["INFO", "WARNING", "ERROR"]
     log_level = random.choice(log_levels)
@@ -15,7 +15,7 @@ def filter_errors(log_line):
     if match:
         print("Error found:", log_line)
 
-
+# Simulate live stream of data
 while True:
     line = get_live_logging_data()
     filter_errors(line)
