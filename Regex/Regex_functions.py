@@ -14,6 +14,8 @@
 
 #span() returns a tuple containing the starting and ending position of the matched strings within a tuple
 
+#sub() returns a substituted string
+
 import re
 
 
@@ -30,5 +32,6 @@ if match:
     print(f"Start position: {match.start()}")
     print(f"End position: {match.end()}")
     print(f"Span positions: {match.span()}")
+    print(f"Substituted number: {re.sub(r"\D","",text)}")
 else:
     print("no match found")
