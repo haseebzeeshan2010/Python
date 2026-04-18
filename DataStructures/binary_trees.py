@@ -19,11 +19,25 @@ root.left.left = Node("D")
 root.left.right = Node("E")
 
 
-def dfs(node):
+def dfs(node): # Using pre order traversal
     if node is None:
         return
     print(node.value)
     dfs(node.left)
     dfs(node.right)
 
+def bfs(root): # Simple Breadth First Search
+    if root is None:
+        return
+    queue = [root]
+    while queue:
+        node = queue.pop(0)
+        print(node.value)
+        if node.left:
+            queue.append(node.left)
+        if node.right:
+            queue.append(node.right)
+
 dfs(root)
+print()
+bfs(root)
