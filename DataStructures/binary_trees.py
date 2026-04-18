@@ -26,6 +26,13 @@ def dfs(node): # Using pre order traversal
     dfs(node.left)
     dfs(node.right)
 
+def dfs_postorder(node): # Using post order traversal
+    if node is None:
+        return
+    dfs_postorder(node.left)
+    dfs_postorder(node.right)
+    print(node.value)
+
 def bfs(root): # Simple Breadth First Search
     if root is None:
         return
@@ -39,5 +46,7 @@ def bfs(root): # Simple Breadth First Search
             queue.append(node.right)
 
 dfs(root)
+print()
+dfs_postorder(root)
 print()
 bfs(root)
